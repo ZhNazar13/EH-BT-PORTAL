@@ -6,8 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./t-lesson-item.component.css']
 })
 export class TLessonItemComponent implements OnInit {
-  @Input() lessonItem: any;
-
+  @Input() public lessonItem: any;
   constructor() { }
 
   ngOnInit(): void {

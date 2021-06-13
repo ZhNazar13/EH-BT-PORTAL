@@ -12,6 +12,10 @@ import { routes } from '../../../../consts';
 export class AuthPageComponent {
   public todayDate: Date = new Date();
   public routers: typeof routes = routes;
+  public authCred = {
+    login: 'test',
+    password: 'test'
+  };
 
   constructor(
     private service: AuthService,
@@ -19,9 +23,7 @@ export class AuthPageComponent {
   ) { }
 
   public sendLoginForm(): void {
-    this.service.login();
-
-    this.router.navigate([this.routers.DASHBOARD]).then();
+    this.service.login(this.authCred);
   }
 
   public sendSignForm(): void {

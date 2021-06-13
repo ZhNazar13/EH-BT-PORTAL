@@ -1,1 +1,13 @@
-<p>teacher-ws works!</p>
+<app-layout>
+  <mat-toolbar class="page-header" role="heading">
+    <h1>Teacher Workspace</h1>
+  </mat-toolbar>
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Today">
+      <app-teacher-hot-to-do></app-teacher-hot-to-do>
+    </mat-tab>
+    <mat-tab label="My Classes">
+      <app-my-groups></app-my-groups>
+    </mat-tab>
+  </mat-tab-group>
+</app-layout>

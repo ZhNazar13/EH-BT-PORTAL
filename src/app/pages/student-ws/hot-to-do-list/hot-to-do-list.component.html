@@ -1,11 +1,11 @@
-<h5>Бүгін 2 Қазан, Сәрсенб3</h5>
+<h5>{{ myDate | date:'medium' }}</h5>
 <mat-expansion-panel *ngFor="let element of toList">
   <mat-expansion-panel-header>
     <mat-panel-title>
       {{element.title}}
     </mat-panel-title>
     <mat-panel-description>
-      {{element.summary}}
+      {{element.teacher}}
     </mat-panel-description>
   </mat-expansion-panel-header>
 

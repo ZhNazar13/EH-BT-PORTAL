@@ -19,6 +19,6 @@ export class MyCourcesComponent implements OnInit {
   getMyCources() {
     this.studentWsService.getMyCources(1).subscribe(res => {
       this.list = res;
-    })
+    });
   }
 }

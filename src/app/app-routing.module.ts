@@ -36,6 +36,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/student-ws/student-ws.module').then(m => m.StudentWsModule)
   },
   {
+    path: 'teacher-ws',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./pages/teacher-ws/teacher-ws.module').then(m => m.TeacherWsModule)
+  },
+  {
+    path: 'teacher-scheduler',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./pages/teacher-scheduler/teacher-scheduler.module').then(m => m.TeacherSchedulerModule)
+  },
+  {
     path: 'ui',
     canActivate: [AuthGuard],
     loadChildren: () => import('./pages/ui-elements/ui-elements.module').then(m => m.UiElementsModule)

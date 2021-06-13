@@ -8,6 +8,7 @@ import {StudentWsService} from '../../../shared/service/student-ws.service';
 })
 export class HotToDoListComponent implements OnInit {
   toList = [];
+  myDate = new Date();
 
   constructor(private studentWsService: StudentWsService) {
   }

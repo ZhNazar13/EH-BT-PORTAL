@@ -7,17 +7,21 @@
 <p class="sidebar-title">Teacher</p>
 
 <mat-list>
-  <a href="https://flatlogic.com/templates" target="_blank" style="text-decoration: none;">
-    <mat-list-item>
-      <mat-icon>library_books</mat-icon> Library
-    </mat-list-item>
-  </a>
+  <mat-list-item routerLink="{{routes.TEACHER_WS}}" routerLinkActive="active">
+    <mat-icon>workspaces</mat-icon> Teacher Workspace
+  </mat-list-item>
+</mat-list>
+
+<mat-list>
+  <mat-list-item routerLink="{{routes.TEACHER_SCHEDULER}}" routerLinkActive="active">
+    <mat-icon>scheduler</mat-icon> Teacher Scheduler
+  </mat-list-item>
 </mat-list>
 
 <p class="sidebar-title">Student</p>
 
 <mat-list>
   <mat-list-item routerLink="{{routes.STUDENT_WS}}" routerLinkActive="active">
-    <mat-icon>home</mat-icon> Student Workspace
+    <mat-icon>workspaces</mat-icon> Student Workspace
   </mat-list-item>
 </mat-list>

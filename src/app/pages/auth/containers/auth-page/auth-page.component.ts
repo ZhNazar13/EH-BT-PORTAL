@@ -13,8 +13,8 @@ export class AuthPageComponent {
   public todayDate: Date = new Date();
   public routers: typeof routes = routes;
   public authCred = {
-    login: 'test',
-    password: 'test'
+    login: '',
+    password: ''
   };
 
   constructor(

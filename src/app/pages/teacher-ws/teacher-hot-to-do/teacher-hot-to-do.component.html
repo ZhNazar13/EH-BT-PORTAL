@@ -1,0 +1,14 @@
+<h5>{{ myDate | date:'medium' }}</h5>
+<mat-expansion-panel *ngFor="let element of list">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{element.title}}
+    </mat-panel-title>
+    <mat-panel-title>
+      {{element.group}}
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <br>{{element.content.classRoom}}
+  <br>{{element.content.homeWork}}
+  <br>{{element.content.theme}}
+</mat-expansion-panel>

@@ -4,23 +4,23 @@
   </mat-list-item>
 </mat-list>
 
-<p class="sidebar-title">Teacher</p>
+<p class="sidebar-title" *ngIf="roles.includes('teacher')">Teacher</p>
 
-<mat-list>
+<mat-list *ngIf="roles.includes('teacher')">
   <mat-list-item routerLink="{{routes.TEACHER_WS}}" routerLinkActive="active">
     <mat-icon>workspaces</mat-icon> Teacher Workspace
   </mat-list-item>
 </mat-list>
 
-<mat-list>
+<mat-list *ngIf="roles.includes('teacher')">
   <mat-list-item routerLink="{{routes.TEACHER_SCHEDULER}}" routerLinkActive="active">
     <mat-icon>scheduler</mat-icon> Teacher Scheduler
   </mat-list-item>
 </mat-list>
 
-<p class="sidebar-title">Student</p>
+<p class="sidebar-title" *ngIf="roles.includes('student')">Student</p>
 
-<mat-list>
+<mat-list *ngIf="roles.includes('student')">
   <mat-list-item routerLink="{{routes.STUDENT_WS}}" routerLinkActive="active">
     <mat-icon>workspaces</mat-icon> Student Workspace
   </mat-list-item>
